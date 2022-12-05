@@ -115,13 +115,14 @@
                           "
                         >
                           <Link
-
+                            :href="route('frontend.communities.show', community.slug)"
                             class="
                               text-blue-500
                               hover:text-blue-700
                               font-semibold
                             "
-                            >{{ community.name }}</Link
+                            >{{ community.name }}
+                          </Link
                           >
                         </td>
                         <td
