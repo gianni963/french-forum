@@ -12,10 +12,9 @@
     "
   >
     <div class="mr-3">
-      <PostVote :post="post" />
+      <PostVote :post="post.slug"/>
     </div>
     <div>
-    <div class="mr-3">upvote</div>
       <div class="flex m-2 p-2 text-sm">
         <Link
 
@@ -89,6 +88,7 @@
 
 <script setup>
 import { Link } from "@inertiajs/inertia-vue3";
+import PostVote from "./PostVote.vue";
 
 defineProps({
   post: Object,
