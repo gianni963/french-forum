@@ -55,5 +55,10 @@ class Post extends Model
         return 'slug';
 
     }
+
+    public function postVotes()
+    {
+        return $this->hasMany(Vote::class);
+    }
     
 }
